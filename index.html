@@ -354,19 +354,49 @@
             </li>
           </ul>
         </div>
+
         <div class="subscription">
           <p class="join">Подпишитесь на рассылку</p>
+          <form action="">
+            <label for=""></label>
+            <input type="email" name="user-email" placeholder="E-mail" />
+            <button class="subscription button" type="submit">
+              Подписаться
+              <svg class="icon_teiegram">
+                <use href="./images/svg sprite/form/symbol-defs-form.svg#icon-icon_telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="scroll">
         <div class="modal">
+          <!-- кнопка викл. модалки -->
           <button class="btn_end" type="button" data-modal-close>
             <svg width="18" height="18">
               <use href="./images/svg sprite/sprite_optim.svg#icon-close-black-18dp-2-1"></use>
             </svg>
           </button>
+
+          <!-- модальні елементи форми -->
+          <form action="" class="modal_form">
+            <label for=""></label>
+            <input type="text" class="user_name-form" />
+
+            <label for=""></label>
+            <input type="tel" class="phone-form" />
+
+            <label for=""></label>
+            <input type="mail" class="mail-form" />
+
+            <textarea name="" class="text-form" id=""></textarea>
+
+            <input type="text" class="check-form>
+            <label for="" class="check-form"></label>
+            <input type="text" />
+          </form>
         </div>
       </div>
     </div>
