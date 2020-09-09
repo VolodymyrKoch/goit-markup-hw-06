@@ -792,6 +792,7 @@ main p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: transform 1s linear;
 }
+.btn_end:focus  {}
 
 .is-hidden {
   opacity: 0;
@@ -829,16 +830,19 @@ main p {
 /* .modal_form__icon {
   fill: currentcolor; */
 }
-.form_imput:focus ~ .modal_form__icon {
-  fill: var(--logo-color);
-}
+
 .form_imput:focus,
 .user_mesage-form:focus {
   outline: none;
 }
-.form_imput:focus {
+.form_imput:focus,
+.user_mesage-form:focus  {
   border: 1px solid var(--logo-color);
 }
+.form_imput:focus ~ .modal_form__icon {
+  fill: var(--logo-color);
+}
+
 .form_imput {
   /* position: absolute; */
   width: 448px;
@@ -891,9 +895,12 @@ main p {
 }
 
 .check-form-policy:checked + .label_check-form{
-  color: red;
+  color: teal;
 }
 
+.label_check-form a{
+  color: var(--logo-color);
+}
 .label_check-form {
   font-family: Roboto;
 font-style: normal;
@@ -915,10 +922,12 @@ margin-bottom: 30px;
   border: 1px solid #212121;
   margin-right: 8px;
 }
+
+}
 .check-form-policy:checked + .label_check-form::before {
-  background-image: url("../images\svg sprite\form/icon_mark.svg");
-/* background-image: url("../images/svg\ sprite/"); */
-  background-position: 0 0;
+  background-image: url("../images/svg_sprite/form/icon_mark.svg");
+  /* background-color: var(--logo-color);
+  background-position: 0 0; */
 }
 .btn_form {
   /* background: #2196F3; */
