@@ -746,9 +746,10 @@ main p {
   z-index: 9;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(0, 0, 0, 0.2);
+  visibility: visible;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-100%) scale(0.3);
+  transform: translate(-100%) scale(0.5);
 }
 .scroll {
   position: absolute;
@@ -759,9 +760,6 @@ main p {
   display: flex;
   overflow: hidden auto;
   padding-top: 100px;
-
-  transition: transform 1s linear;
-  transform: translateY(0);
 }
 
 .modal {
@@ -774,13 +772,11 @@ main p {
   top: 50%; */
   transform: translateY(10%) scale(1);
 
-  transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   background: var(--dark-background-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-
-  padding: 40px;
 }
 .btn_end {
   display: flex;
@@ -920,6 +916,8 @@ margin-bottom: 30px;
 }
 .check-form-policy:checked + .label_check-form::before {
   background-image: url("../images\svg sprite\form/icon_mark.svg");
+/* background-image: url("../images/svg\ sprite/"); */
+  background-position: 0 0;
 }
 .btn_form {
   /* background: #2196F3; */
