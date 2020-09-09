@@ -792,7 +792,9 @@ main p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: transform 1s linear;
 }
-.btn_end:focus  {}
+.btn_end:focus  {
+  fill: var(--logo-color);
+}
 
 .is-hidden {
   opacity: 0;
@@ -926,8 +928,8 @@ margin-bottom: 30px;
 }
 .check-form-policy:checked + .label_check-form::before {
   background-image: url("../images/svg_sprite/form/icon_mark.svg");
-  /* background-color: var(--logo-color);
-  background-position: 0 0; */
+  background-color: var(--logo-color);
+  background-position: center;
 }
 .btn_form {
   /* background: #2196F3; */
