@@ -814,6 +814,7 @@ main p {
 .modal_form {
   display: flex;
   flex-direction: column;
+  padding: 40px;
 }
 .modal__user_form {
   position: relative;
