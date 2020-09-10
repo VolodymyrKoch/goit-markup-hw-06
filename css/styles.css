@@ -711,6 +711,8 @@ main p {
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0);
+padding-left: 16px;
 }
 
 .icon_teiegram {
@@ -828,6 +830,7 @@ main p {
   top: 50%;
   left: 12px;
   transform: translateY(-50%);
+  pointer-events: none;
 }
 /* .modal_form__icon {
   fill: currentcolor; */
@@ -856,7 +859,7 @@ main p {
 }
 .modal-form_label {
   position: absolute;
-  top: -15px;
+  top: -20px;
   left: 0;
 
   font-family: Roboto;
